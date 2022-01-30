@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+        <title>EduFord</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <link rel="icon" type="image/png" href="images/collegefav.png">
+    </head>
+    <body>
+
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()" ></i>
+            </nav>
+            <h1>Our Courses</h1>
+        </section>
+
+<!------------------------ Course -------------------------->
+
+        <section class="course">
+            <h1>Courses We Offer</h1>
+            <div class="row">
+                <div class="course-col">
+                    <h3>Google UX Design Professional Certificate</h3>
+                    <p>Prepare for a career in the high-growth field of UX design, no experience required. With professional training designed by Google, get on the fast-track to a competitively paid job.
+
+                        User experience (UX) designers focus on the interaction that users have with products, like websites, apps, and physical objects. They make those everyday interactions useful, enjoyable, and accessible.
+                        
+                        Over 7 courses, gain in-demand skills that will prepare you for an entry-level job. At under 10 hours per week, you can complete the certificate in less than 6 months</p>
+                </div>
+                <div class="course-col">
+                    <h3>IBM Data Engineering Professional Certificate</h3>
+                    <p>This Professional Certificate is for anyone who wants to develop job-ready skills, tools, and a portfolio for an entry-level data engineer position. Throughout the self-paced online courses, you will immerse yourself in the role of a data engineer and acquire the essential skills you need to work with a range of tools and databases to design, deploy, and manage structured and unstructured data.  
+
+                        By the end of this Professional Certificate, you will be able to explain and perform the key tasks required in a data engineering role. You will use the Python programming language and Linux/UNIX shell scripts to extract, transform and load (ETL) data. You will work with Relational Databases (RDBMS) and query data using SQL statements. You will use NoSQL databases and unstructured data.  You will be introduced to Big Data and work with Big Data engines like Hadoop and Spark.  You will gain experience with creating Data Warehouses and utilize Business Intelligence tools to analyze and extract insights. </p>
+                </div>
+                <div class="course-col">
+                    <h3>IBM Cybersecurity Analyst Professional Certificate</h3>
+                    <p>A growing number of exciting, well-paying jobs in today’s security industry do not require a college degree. This 8-course Professional Certificate will give you the technical skills to become job-ready for a Cybersecurity Analyst role. Instructional content and labs will introduce you to concepts including network security, endpoint protection, incident response, threat intelligence, penetration testing, and vulnerability assessment.
+
+                        Cybersecurity is one of the most in-demand career fields.
+                        
+                        ●  According to CyberSeek, from June 2019  through May 2020, there were 171,000 openings for Information Security Analysts, but only 125,000 workers currently employed in those positions – an annual talent shortfall of 46,000 workers. On average, cybersecurity roles take 21% longer to fill than other IT jobs.</p>
+                </div>
+            </div>
+
+        </section>
+
+<!------------------------ Facilities -------------------->
+
+        <section class="facilities">
+            <h1>Our Facilities</h1>
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/library.png">
+                    <h3>World Class Library</h3>
+                    <p>The library possesses more than 1,190 manuscripts. in Arabic, Persian and Urdu and about 7,418 in Sanskrit and allied languages.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/basketball.png">
+                    <h3>Largest Play Ground</h3>
+                    <p>This park features two tennis courts, one baseball diamond and backstop, playground with slide, baby swings, a Rich Beyer sculpture of a sasquatch, adult exercise equipment and bathroom facilities.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/cafeteria.png">
+                    <h3>Tasty And Healthy Food</h3>
+                    <p>Our campus is packed with interesting and relaxing places to eat and drink. There are also three supermarkets where you can pick up your groceries and essentials.</p>
+                </div>
+            </div>
+        </section>        
+
+<!------------------------- Footer ------------------------->
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>© Copyright University of EduFord 2022. Designed and Developed by University Department of Information Technology.</p>
+            <div class="icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by Faisal Khan</p>
+        </section>
+
+<!-------------- Javascript for toggle menu ------------->
+        <script>
+            var navLink = document.getElementById("navLinks")
+
+            function showMenu(){
+                navLink.style.right = "0"
+            }
+            function hideMenu(){
+                navLink.style.right = "-200px"
+            }
+        </script>
+    </body>
+</html>

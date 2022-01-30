@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+        <title>EduFord</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <link rel="icon" type="image/png" href="images/collegefav.png">
+    </head>
+    <body>
+
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()" ></i>
+            </nav>
+            <h1>Our Certificate & Online Programs For 2022</h1>
+        </section>
+
+<!---------------------- blog page content --------------------->
+        
+        <section class="blog-content">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="images/certificate.jpg" alt="">
+                    <h2>Our Certificate & Online Programs For 2022</h2>
+                    <p>A growing number of exciting, well-paying jobs in today’s security industry do not require a college degree. This 8-course Professional Certificate will give you the technical skills to become job-ready for a Cybersecurity Analyst role. Instructional content and labs will introduce you to concepts including network security, endpoint protection, incident response, threat intelligence, penetration testing, and vulnerability assessment.</p>
+                    <br>
+                    <p>Whether you’ve been tinkering with social media platforms for your business already or are completely new to the field of digital marketing, you’ve come to the right place. This six-course program, developed by digital marketing experts at Aptly together with Facebook marketers, includes an industry-relevant curriculum designed to prepare you for an entry-level role in social media marketing.
+
+                        After an introduction to digital marketing and major social media platforms, you’ll learn to establish an online presence, create posts, build a following, and manage your social media accounts. You’ll develop skills in creating and managing advertising campaigns in social media and learn to evaluate the results of your marketing efforts.
+                        
+                        Upon successful completion of the program, you’ll earn both the Coursera and the Facebook Digital Marketing Associate Certification, proving your skills in social media marketing and in the use of Facebook Ads Manager.</p>
+                    <br>
+                    <p>This beginner-level, six-course certificate, developed by Google, is designed to provide IT professionals with in-demand skills -- including Python, Git, and IT automation -- that can help you advance your career.
+
+                        Knowing how to write code to solve problems and automate solutions is a crucial skill for anybody in IT.
+                        
+                        This program builds on your IT foundations to help you take your career to the next level. It’s designed to teach you how to program with Python and how to use Python to automate common system administration tasks. You'll also learn to use Git and GitHub, troubleshoot and debug complex problems, and apply automation at scale by using configuration management and the Cloud.</p>
+                    <br>
+                    <p>TensorFlow is one of the most in-demand and popular open-source deep learning frameworks available today. The DeepLearning.AI TensorFlow Developer Professional Certificate program teaches you applied machine learning skills with TensorFlow so you can build and train powerful models. 
+
+                        In this hands-on, four-course Professional Certificate program, you’ll learn the necessary tools to build scalable AI-powered applications with TensorFlow. After finishing this program, you’ll be able to apply your new TensorFlow skills to a wide range of problems and projects. This program can help you prepare for the Google TensorFlow Certificate exam and bring you one step closer to achieving the Google TensorFlow Certificate.</p>
+                    <br>
+                    <p>This specialization has been developed to help administrators master the foundations of establishing and managing Google Workspace for their organization.
+
+                        You will set up a new Google Workspace account, and explore provisioning options. You will learn how to manage users and become familiar with organizational structures and Google Workspace core services. You will learn how to configure these services to meet your own organizational needs.</p>
+
+                    <div class="comment-box">
+                        
+                        <h3>Leave A Comment</h3>
+
+                        <form action="" class="comment-form">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="email" placeholder="Enter Email">
+                            <textarea rows="5" placeholder="Your Comment"></textarea>
+                            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                        </form>
+
+                    </div>
+
+                </div>
+                <div class="blog-right">
+                   <h3>Categories</h3>
+                   <div>
+                       <span>Bussines Analytics</span>
+                       <span>21</span>
+                   </div>
+                   <div>
+                        <span>Data Scientist</span>
+                        <span>28</span>
+                    </div>
+                    <div>
+                        <span>Machine Learning</span>
+                        <span>15</span>
+                    </div>
+                    <div>
+                        <span>Computer Science</span>
+                        <span>34</span>
+                    </div>
+                    <div>
+                        <span>AutoCAD</span>
+                        <span>42</span>
+                    </div>
+                    <div>
+                        <span>Journalism</span>
+                        <span>22</span>
+                    </div>
+                    <div>
+                        <span>Commerce</span>
+                        <span>30</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<!------------------------- Footer ------------------------->
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>© Copyright University of EduFord 2022. Designed and Developed by University Department of Information Technology.</p>
+            <div class="icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by Faisal Khan</p>
+        </section>
+
+<!-------------- Javascript for toggle menu ------------->
+        <script>
+            var navLink = document.getElementById("navLinks")
+
+            function showMenu(){
+                navLink.style.right = "0"
+            }
+            function hideMenu(){
+                navLink.style.right = "-200px"
+            }
+        </script>
+    </body>
+</html>
